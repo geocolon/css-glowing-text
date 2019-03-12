@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: black;
+            color:#ffffff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            width: 60vw;
+            margin: 3rem auto;
+            border: #ffffff solid 1px;
+            border-radius: 4px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 4em;
+            color: yellow;
+            text-transform: uppercase;
+        }
+        h1.red {
+            text-align: center;
+            font-size: 4em;
+            color: #E34234;
+            text-transform: uppercase;
+        }
+        h1.blue {
+            text-align: center;
+            font-size: 4em;
+            color: #42AFFF;
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        h1:nth-child(1) a:hover {
+        -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+        animation: neon3 1.5s ease-in-out infinite alternate;
+        }
+
+        h1.red a:hover {
+        -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+        animation: neon4 1.5s ease-in-out infinite alternate;
+        }
+
+        h1.blue a:hover {
+        -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+        animation: neon5 1.5s ease-in-out infinite alternate;
+        }
+
+
+        @-webkit-keyframes neon3 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+            }
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+            }
+        }
+
+        @-webkit-keyframes neon4 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #E34234, 0 0 70px #E34234, 0 0 80px #E34234, 0 0 100px #E34234, 0 0 150px #E34234;
+            }
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #E34234, 0 0 35px #E34234, 0 0 40px #E34234, 0 0 50px #E34234, 0 0 75px #E34234;
+            }
+        }
+
+        @-webkit-keyframes neon5 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 40px #42AFFF;
+            }
+            to {
+                text-shadow: 0 0 20px #42AFFF;
+            }
+        }
+
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+            <h1>
+            <a>Vigilance</a>
+        </h1>
+        <h1 class="red">
+            <a>Vigilance</a>
+        </h1>
+        <h1 class="blue">
+                <a>Vigilance</a>
+            </h1>
+    </div>
+</body>
+</html>
